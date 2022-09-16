@@ -6,6 +6,8 @@ h1 {
 .container {
   border: 2px solid palevioletred;
   width: 800px;
+  padding: 30px;
+  font-family: space mono;
 }
 
 .col-day1,
@@ -15,6 +17,7 @@ h1 {
 .col-day5 {
   border: 1px solid palevioletred;
   margin: 5px auto;
+  padding: 0 60px;
 }
 
 .col,
@@ -25,5 +28,5 @@ h1 {
 .col-5,
 .col-6,
 .col-8 {
-  border: 1px solid palevioletred;
+  border: 1px solid blueviolet;
 }
