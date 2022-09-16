@@ -1,92 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lou's Weather Project</title>
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-      crossorigin="anonymous"
-    />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cutive+Mono&family=Patrick+Hand&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lou's Weather Project</title>
 
-    <link rel="stylesheet" href="src/styles.css" />
-  </head>
-  <body>     
-      <br />
-      <br />
-      <div class="container">
-<!-------First Row------->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cutive+Mono&family=Patrick+Hand&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
 
-        <div class="row" id="first=row">
-          <div class="col-9" id="location-search">
-            <form class="search-form" id="city-search-form">
-        <input type="text" placeholder="Enter a city..." size="45" id="city-search-input" />      
-         </textarea><input type="submit" id="search-btn" class="search-btn" value="🔍">
-          </div>
-                 
-          <div class="col-2 text-center" id="current-btn"  class="current-btn"><button id="current-btn">Current</button></div>
+  <link rel="stylesheet" href="src/styles.css" />
+</head>
+
+<body>
+  <br />
+  <br />
+  <div class="container">
+    <!-----------------First Row----------------->
+
+    <div class="row" id="first=row">
+      <div class="col-9" id="location-search">
+        <form class="search-form" id="city-search-form">
+          <input type="text" placeholder="Enter a city..." size="55" id="city-search-input" />
+          </textarea><input type="submit" id="search-btn" class="search-btn" value="🔍">
+      </div>
+
+      <div class="col-2 text-center" id="current-btn" class="current-btn"><button id="current-btn">Current</button>
+      </div>
+    </div>
+    <br>
+    <!-----------------Second Row----------------->
+
+    <div class="row" id="second-row">
+      <div class="col-5" id="search-result">
+        <h4 id="search-input-result" class="location">location result</h4>
+        <h5 id="temperature" class="temperature">temp</h5>
+        <h5 id="humidity" class="current-weather">humid</h5>
+        <h5 id="wind-speed" class="current-weather">wind</h5>
+
+      </div>
+
+      <div class="col" id="current-date">
+        <p class="current-date">date</p>
+        <div>
+          <p class="current-date">time</p>
         </div>
-      <br>
-<!-------Second Row------->
-
-        <div class="row" id="second-row">
-          <div class="col-4" id="search-result">location result</div>
-
-          <div class="col-1" id="empty-space-3"></div>
-          <div class="col">date 
-            <div>time</div>
-          </div>
-          <div class="col-1" id="empty-space-4"></div>
-          <div class="col-4">
-            <div class="row">
-              <div class="col-day1" id="forecast-day-1">forecast day 1</div>
-            </div>
-
-            <div class="row">
-              <div class="col-day2" id="forecast-day-2">forecast day 2</div>
-            </div>
-          </div>
-        </div>
-
-<!-------Third Row------->
-
-        <div class="row" id="third-row">
-          <div class="col-2">temp</div>
-             <div class="col-1"></div>
-          <div class="col-2">weather pic</div>
-          <div class="col-1"></div>
-          <div class="col-2">humid 
-<div>wind</div>
-
-          </div>
-    
-        
-
-
-          <div class="col-4">
-            <div class="row">
-              <div class="col-day3" id="forecast-day-3">forecast day 3</div>
-            </div>
-            <div class="row">
-              <div class="col-day4" id="forecast-day-4">forecast day 4</div>
-            </div>
-            <div class="row">
-              <div class="col-day5" id="forecast-day-5">forecast day 5</div>
-            </div>
-          </div>
+        <div class="current-weather-pic"><img src="images/cloudy.png" alt="cloudy"><br>
+          <h4>description</h4>
         </div>
       </div>
-    </div><br>
-    <div class="open-link">
-      <a href="https://github.com/CactusPancake/weather-project2-.0.git" class="open-link" target="_blank">Open-source</a>code by : Louise Alvarez</div>
 
-    <script src="src/script.js"></script>
-  </body>
+
+      <div class="col-4">
+        <div class="row">
+          <ul class="forecast-days">
+            <li class="forecast-day1">Day 1<br> <br></li>
+            <li class="forecast-day2">Day 2<br> <br></li>
+            <li class="forecast-day3">Day 3<br> <br></li>
+            <li class="forecast-day4">Day 4<br> <br></li>
+            <li class="forecast-day5">Day 5<br> <br></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+  </div><br>
+  <div class="open-link">
+    <a href="https://github.com/CactusPancake/weather-project2-.0.git" class="open-link"
+      target="_blank">Open-source</a>code by : Louise Alvarez
+  </div>
+
+  <script src="src/script.js"></script>
+</body>
+
 </html>
