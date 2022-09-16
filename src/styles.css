@@ -1,0 +1,29 @@
+h1 {
+  text-align: center;
+  color: palevioletred;
+}
+
+.container {
+  border: 2px solid palevioletred;
+  width: 800px;
+}
+
+.col-day1,
+.col-day2,
+.col-day3,
+.col-day4,
+.col-day5 {
+  border: 1px solid palevioletred;
+  margin: 5px auto;
+}
+
+.col,
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-8 {
+  border: 1px solid palevioletred;
+}
