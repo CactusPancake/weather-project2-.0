@@ -5,6 +5,7 @@ h1 {
 
 .container {
   border: 2px solid palevioletred;
+  border-radius: 5px;
   width: 800px;
   padding: 30px;
   font-family: space mono;
@@ -28,5 +29,37 @@ h1 {
 .col-5,
 .col-6,
 .col-8 {
-  border: 1px solid blueviolet;
+  border: 1px solid red;
+}
+
+.open-link {
+  font-size: 15px;
+  text-align: center;
+  color: palevioletred;
+  margin: 0 auto;
+}
+
+a {
+  box-shadow: inset 0 0 0 0 palevioletred;
+  color: palevioletred;
+  padding: 0 0.25rem;
+  margin: 0 -0.25rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+a:hover {
+  color: #fff;
+  box-shadow: inset 200px 0 0 0 palevioletred;
+}
+
+/* Presentational styles */
+a {
+  color: palevioletred;
+  font-family: space mono;
+  font-size: 27px;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.search-btn {
+  margin: 0 5px;
 }
