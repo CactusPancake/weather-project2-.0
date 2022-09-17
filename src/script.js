@@ -19,21 +19,21 @@ function displayTemperature(response) {
   windElement.innerHTML = response.data.wind.speed;
 }
 
-{
+function search(city) {
   let apiKey = "203fa770242fcd2b9555d832a88ea567";
-  let location = "New York";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}&units=metric`;
+
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
   axios.get(apiUrl).then(displayTemperature);
 }
 
-search("London");
-
-function search(event) {
+function handleSubmit(event) {
   event.preventDefault();
   let cityInputElement = document.querySelector("#search-input");
-  console.log(cityInputElement.value);
+  search(cityInputElement.value);
 }
 
 let form = document.querySelector("#location-search");
-form.addEventListener("submit", search);
+form.addEventListener("submit", handleSubmit);
+
+search("New York");
