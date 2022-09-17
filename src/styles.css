@@ -86,14 +86,16 @@ ul {
 }
 
 .current-weather-pic {
-  margin-top: 60px;
+  margin-top: 40px;
   text-align: center;
 }
 
 
 .current-date {
-
+  border: 1px solid red;
   text-align: center;
+  padding: 10px;
+
 }
 
 .current-weather {
@@ -121,4 +123,9 @@ ul {
 .description {
   font-weight: 300;
   text-transform: capitalize;
+}
+
+.col {
+  border: 1px solid blue;
+  text-align: center;
 }
