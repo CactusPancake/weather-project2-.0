@@ -28,7 +28,6 @@ timeElement.innerHTML = `${day}  ${hours}:${minutes}`;
 
 //------------------------------- Weather -------------------------------
 function displayTemperature(response) {
-  console.log(response);
   let temperatureElement = document.querySelector("#temperature");
   let locationElement = document.querySelector("#search-input-result");
   let descriptionElement = document.querySelector("#weather-description");
@@ -37,6 +36,7 @@ function displayTemperature(response) {
   let lowOfElement = document.querySelector("#low-of");
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind-speed");
+  let iconElement = document.querySelector("#main-icon");
 
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
   locationElement.innerHTML = response.data.name;
@@ -46,7 +46,10 @@ function displayTemperature(response) {
   lowOfElement.innerHTML = Math.round(response.data.main.temp_min);
   humidityElement.innerHTML = response.data.main.humidity;
   windElement.innerHTML = response.data.wind.speed;
+  iconElement.setAttribute("src", `img/${response.data.weather[0].icon}.png`);
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
+
 //------------------------------- Location Search -------------------------------
 function search(city) {
   let apiKey = "203fa770242fcd2b9555d832a88ea567";
