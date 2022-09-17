@@ -15,6 +15,8 @@
     href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cutive+Mono&family=Patrick+Hand&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet">
 
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
   <link rel="stylesheet" href="src/styles.css" />
 </head>
 
@@ -25,11 +27,13 @@
     <!-----------------First Row----------------->
 
     <div class="row" id="first=row">
-      <div class="col-9" id="location-search">
-        <form class="search-form" id="city-search-form">
-          <input type="text" placeholder="Enter a city..." size="55" id="city-search-input" />
+      <div class="col-9">
+        <form id="location-search" class="search-form">
+          <input type="search" id="search-input" placeholder="Enter a city..." size="55" />
           </textarea><input type="submit" id="search-btn" class="search-btn" value="🔍">
       </div>
+
+
 
       <div class="col-2 text-center" id="current-btn" class="current-btn"><button id="current-btn">Current</button>
       </div>
@@ -38,11 +42,22 @@
     <!-----------------Second Row----------------->
 
     <div class="row" id="second-row">
-      <div class="col-5" id="search-result">
+      <div class="col-4" id="search-result">
         <h4 id="search-input-result" class="location">location result</h4>
-        <h5 id="temperature" class="temperature">temp</h5>
-        <h5 id="humidity" class="current-weather">humid</h5>
-        <h5 id="wind-speed" class="current-weather">wind</h5>
+        <h5 class="temperature"> <span id="temperature"> </span>°C</h5>
+        <h6>Feels like: <span id="feels-like" class="feels-like"> </span>°C
+        </h6>
+
+        <h6>Temp high of: <span id="high-of" class="current-weather"> </span>°C
+        </h6>
+
+        <h6>Temp low of: <span id="low-of" class="current-weather"> </span>°C
+        </h6>
+        <h6>Humidity: <span id="humidity" class="current-weather"> </span>
+        </h6>
+        <h6>Wind Speed: <span id="wind-speed" class="current-weather"> </span> khm
+
+        </h6>
 
       </div>
 
@@ -52,7 +67,7 @@
           <p class="current-date">time</p>
         </div>
         <div class="current-weather-pic"><img src="images/cloudy.png" alt="cloudy"><br>
-          <h4>description</h4>
+          <h4 id="weather-description" class="description">description</h4>
         </div>
       </div>
 
