@@ -129,3 +129,11 @@ ul {
   border: 1px solid blue;
   text-align: center;
 }
+
+.celsius {
+  font-size: 20px;
+}
+
+.fahrenheit {
+  font-size: 20px;
+}
