@@ -28,6 +28,7 @@ timeElement.innerHTML = `${day}  ${hours}:${minutes}`;
 
 //------------------------------- Weather -------------------------------
 function displayTemperature(response) {
+  console.log(response);
   let temperatureElement = document.querySelector("#temperature");
   let locationElement = document.querySelector("#search-input-result");
   let descriptionElement = document.querySelector("#weather-description");
