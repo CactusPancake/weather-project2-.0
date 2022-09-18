@@ -1,39 +1,94 @@
-h1 {
-  text-align: center;
-  color: palevioletred;
-}
-
 .container {
   border: 1px solid palevioletred;
   border-radius: 5px;
   max-width: 900px;
   padding: 30px;
   font-family: poppins;
+  background-color: snow;
 }
 
-.col-day1,
-.col-day2,
-.col-day3,
-.col-day4,
-.col-day5 {
-  border: 1px solid palevioletred;
-  margin: 5px auto;
-  padding: 0 60px;
+.col-5 {
+  border: 1px solid grey;
+  border-radius: 5px;
+
+}
+
+.location {
+  opacity: 70%;
+  font-size: 40px;
+  font-weight: 400;
+  margin-top: 10px;
+  text-transform: capitalize;
+
+}
+
+.current-date {
+  margin-bottom: 40px;
+  font-size: 20px;
+  opacity: 70%;
+  font-weight: 400;
+
+}
+
+.high-low-temp {
+  text-align: center;
+  margin-left: 12px;
+}
+
+.spacer {
+  margin-left: 20px;
+}
+
+.current-weather {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 15px;
+
+}
+
+.temperature {
+  text-align: center;
+  font-size: 50px;
+  color: palevioletred;
+
+}
+
+.high-low-icon {
+  max-height: 70px;
+}
+
+.temp-unit {
+  font-size: 20px;
+}
+
+.col {
   text-align: center;
 }
 
-
-
-.search-btn {
-  margin: 0 5px;
+.current-weather-pic {
+  margin-top: 40px;
+  text-align: center;
 }
 
-.forecast-img {
-  max-height: 50px;
-  display: inline-block;
-  margin-top: 2px auto;
-  text-align: right;
+.description {
+  margin-top: 40px;
+  text-transform: capitalize;
+  font-size: 20px;
+  opacity: 70%;
+  font-weight: 400;
 
+}
+
+.forecast-icon {
+  max-height: 30px;
+}
+
+.weather-forcast-date {
+  text-align: center;
+  border: 1px solid orange;
+  border-radius: 3px;
+  margin: 10px;
+  padding: 10px;
 }
 
 .open-link {
@@ -67,92 +122,4 @@ a {
 a:active {
   background-color: palevioletred;
   color: white;
-}
-
-
-
-ul {
-  text-align: center;
-  list-style: none;
-  margin: 15px 15px;
-
-  border-radius: 5px;
-}
-
-.forecast-day1,
-.forecast-day2,
-.forecast-day3,
-.forecast-day4,
-.forecast-day5 {
-  border: 1px solid orange;
-  border-radius: 5px;
-
-  margin: 20px 0px;
-
-
-}
-
-.current-weather-pic {
-  margin-top: 80px;
-  text-align: center;
-}
-
-
-.current-date {
-  border: 1px solid red;
-  text-align: center;
-  padding: 10px;
-
-}
-
-.current-weather {
-  margin-top: 50px;
-  font-size: 20px;
-  color: red;
-
-}
-
-.location {
-  color: green;
-  font-size: 40px;
-  font-weight: 400;
-  margin-bottom: 20px;
-  text-transform: capitalize;
-}
-
-.temperature {
-  text-align: center;
-  font-size: 40px;
-  color: purple;
-  margin-top: 40px;
-}
-
-.description {
-  font-weight: 300;
-  text-transform: capitalize;
-}
-
-.col {
-  border: 1px solid blue;
-  text-align: center;
-}
-
-.celsius {
-  font-size: 20px;
-}
-
-.fahrenheit {
-  font-size: 20px;
-}
-
-.forecast-icon {
-  max-width: 30px;
-}
-
-.weather-forcast-date {
-  text-align: center;
-  border: 1px solid orange;
-  border-radius: 3px;
-  margin: 10px;
-  padding: 10px;
 }

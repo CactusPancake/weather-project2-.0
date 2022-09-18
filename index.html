@@ -27,77 +27,85 @@
     <!-----------------First Row----------------->
 
     <div class="row" id="first=row">
-      <div class="col-9">
+      <div class="d-grid gap-2 d-md-block">
         <form id="location-search" class="search-form">
           <input type="search" id="search-input" placeholder="Enter a city..." size="55" />
-          </textarea><input type="submit" id="search-btn" class="search-btn" value="🔍">
-      </div>
+          </textarea><input type="submit" id="search-btn" class="btn btn-outline-primary btn-sm" value="Search">
 
+          <button id="current-btn" class="btn btn-outline-primary btn-sm">Current</button>
 
-
-      <div class="col-2 text-center" id="current-btn" class="current-btn"><button id="current-btn">Current</button>
       </div>
     </div>
     <br>
+
+
+
+
+
+
+
     <!-----------------Second Row----------------->
 
     <div class="row" id="second-row">
-      <div class="col-4" id="search-result">
-        <h4 id="search-input-result" class="location">location result</h4>
-        <h5 class="temperature"> <span id="temperature"> </span><span><a href="#" id="celsius-link" class="celsius">°C
-            </a><a href="#" id="fahrenheit-link" class="fahrenheit">
-              °F</a>
-          </span></h5>
+      <div class="col-5" id="search-result">
+        <div id="search-input-result" class="location">location result</div>
+        <div id="current-date" class="current-date"></div>
 
-        <h6>Feels like: <span id="feels-like" class="feels-like"> </span>°C
-        </h6>
+        <div class="high-low-temp"><img src="img/hot.png" alt="high-of" class="high-low-icon">High of: <span
+            id="high-of" class="current-weather"> </span>°C
+          <span class="high-low-temp"><img src="img/cold.png" alt="low-of" class="high-low-icon">Low of: <span
+              id="low-of" class="current-weather"> </span>°C
+          </span>
+        </div>
+        <br>
+        <br>
+        <div class="current-weather">Humidity: <span id="humidity"> </span> %
+          <span class="spacer">Wind Speed: <span id="wind-speed" class="current-weather"> </span> mph
 
-        <h6>Temp high of: <span id="high-of" class="current-weather"> </span>°C
-        </h6>
+          </span>
 
-        <h6>Temp low of: <span id="low-of" class="current-weather"> </span>°C
-        </h6>
-        <h6>Humidity: <span id="humidity" class="current-weather"> </span>%
-        </h6>
-        <h6>Wind Speed: <span id="wind-speed" class="current-weather"> </span> km/h
+        </div>
 
-        </h6>
 
       </div>
 
+
       <div class="col">
-        <br>
-        <span id="current-date" class="current-date"></span>
 
+        <div class="temperature"> <span id="temperature"> </span><span><a href="#" id="celsius-link"
+              class="temp-unit">°C
+            </a><a href="#" id="fahrenheit-link" class="temp-unit">
+              °F</a>
+          </span></div>
 
-        <div class="current-weather-pic"> <img src="img/01d.png" id="main-icon" alt="clear sky">
-          <br>
-          <h4 id="weather-description" class="description">description</h4>
+        <div>Feels like: <span id="feels-like" class="feels-like"> </span>°C
         </div>
+
+
+        <div class="current-weather-pic"> <img src="img/01d.png" id="main-icon" alt="clear sky"></div>
+
+        <div id="weather-description" class="description">description</div>
+
       </div>
 
 
       <div class="col-4" id="forecast">
 
       </div>
+
+
     </div>
 
 
-
-
-
-
-
-  </div>
-  </div>
-  </div>
-  </div>
   </div>
 
   <div class="open-link">
     <a href="https://github.com/CactusPancake/weather-project2-.0.git" class="open-link"
-      target="_blank">Open-source</a>code by : Louise Alvarez
+      target="_blank">Open-source</a>code by : Louise Alvarez 🖤
   </div>
+
+
+
 
   <script src="src/script.js"></script>
 </body>
