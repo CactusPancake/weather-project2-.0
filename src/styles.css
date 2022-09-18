@@ -29,10 +29,11 @@ h1 {
 }
 
 .forecast-img {
-  max-height: 40%;
-  max-width: 50%;
+  max-height: 50px;
   display: inline-block;
-  margin-top: 5px;
+  margin-top: 2px auto;
+  text-align: right;
+
 }
 
 .open-link {
@@ -63,6 +64,11 @@ a {
   text-decoration: none;
 }
 
+a:active {
+  background-color: palevioletred;
+  color: white;
+}
+
 
 
 ul {
@@ -80,13 +86,14 @@ ul {
 .forecast-day5 {
   border: 1px solid orange;
   border-radius: 5px;
-  margin: 10px;
+
+  margin: 20px 0px;
 
 
 }
 
 .current-weather-pic {
-  margin-top: 40px;
+  margin-top: 80px;
   text-align: center;
 }
 
@@ -136,4 +143,16 @@ ul {
 
 .fahrenheit {
   font-size: 20px;
+}
+
+.forecast-icon {
+  max-width: 30px;
+}
+
+.weather-forcast-date {
+  text-align: center;
+  border: 1px solid orange;
+  border-radius: 3px;
+  margin: 10px;
+  padding: 10px;
 }

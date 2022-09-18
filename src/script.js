@@ -25,6 +25,30 @@ if (hours < 9) {
 }
 
 timeElement.innerHTML = `${day}  ${hours}:${minutes}`;
+//------------------------------- Forecast -------------------------------
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["thu", "Fri", "Sat", "Sun", "Mon"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `    
+          <div class="weather-forcast-date">${day} <img src="img/01d.png" id="main-icon" alt="clear sky"
+              class="forecast-icon" />
+
+            <span class="temperature-max">17° </span> |
+            <span class="temperature-min"> 8°</span>
+
+          
+        </div>`;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
 
 //------------------------------- Weather -------------------------------
 function displayTemperature(response) {
@@ -109,5 +133,5 @@ function displayCelsius(event) {
 }
 
 let celsiusTemperature = null;
-
 search("London");
+displayForecast();
