@@ -130,13 +130,17 @@ a:active {
   #search-btn,
   #current-btn {
     margin-top: 10px;
-    display: flex;
-    justify-content: center;
+
+
   }
 
   #second-row,
   #forecast {
     text-align: center;
+  }
+
+  #search-input {
+    max-width: 260px;
   }
 
 }
