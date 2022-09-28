@@ -145,7 +145,7 @@ function getCurrentLocation(event) {
 
 let currentButton = document.querySelector("#current-btn");
 currentButton.addEventListener("click", getCurrentLocation);
-
+search("London");
 //------------------------------- Celsius | Fahrenheit links -------------------------------
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheit);
@@ -167,4 +167,3 @@ function displayCelsius(event) {
 }
 
 let celsiusTemperature = null;
-search("London");

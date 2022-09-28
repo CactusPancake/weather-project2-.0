@@ -1,4 +1,4 @@
-.container {
+.container-lg {
   border: 1px solid palevioletred;
   border-radius: 5px;
   max-width: 900px;
@@ -122,4 +122,21 @@ a {
 a:active {
   background-color: palevioletred;
   color: white;
+}
+
+@media (max-width: 768px) {
+
+
+  #search-btn,
+  #current-btn {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  #second-row,
+  #forecast {
+    text-align: center;
+  }
+
 }
